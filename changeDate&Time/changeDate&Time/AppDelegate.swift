@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  changeDate&Time
+//  ChangeDate&Time
 //
 //  Created by Alexandr Yanski on 03.11.2018.
 //  Copyright © 2018 Lonely Tree Std. All rights reserved.
