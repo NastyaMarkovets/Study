@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol PassDataDelegate {
+protocol PassDataDelegate: class {
     func passData(value: cellData)
 }
 
@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
     @IBOutlet weak var enterTextField: UITextField!
     
     let tableViewController = TableViewController()
-    var delegate: PassDataDelegate?
+    weak var delegate: PassDataDelegate?
     var imagePicker: UIImagePickerController!
     var namePhoto: String?
     

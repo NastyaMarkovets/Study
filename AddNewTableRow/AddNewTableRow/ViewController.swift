@@ -7,13 +7,13 @@
 //
 
 import UIKit
-protocol PassDataDelegate {
+protocol PassDataDelegate: class {
     func passData(value: String)
 }
 class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var enterMovieTextField: UITextField!
     let tableViewController = TableViewController()
-    var delegate: PassDataDelegate?
+    weak var delegate: PassDataDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
