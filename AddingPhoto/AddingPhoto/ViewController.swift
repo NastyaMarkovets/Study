@@ -17,8 +17,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Keyboard
         MessageTextField.keyboardAppearance = .dark
-        
         let bottomSwipe = UISwipeGestureRecognizer(target: self, action: #selector(hideKeyboard))
         bottomSwipe.direction = UISwipeGestureRecognizerDirection.down
         self.view.addGestureRecognizer(bottomSwipe)
@@ -28,7 +28,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @objc func hideKeyboard() {
         self.view.endEditing(true)
     }
-    
     
     //Photo
     func takeFhotoLibrary() {
