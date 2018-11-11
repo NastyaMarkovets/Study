@@ -29,6 +29,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         self.view.endEditing(true)
     }
     
+    
     //Photo
     func takeFhotoLibrary() {
         imagePicker =  UIImagePickerController() //экземпляр imagePicker
