@@ -31,7 +31,9 @@
                                     <constraint firstAttribute="height" constant="40" id="S8J-gf-F88"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Change Date"/>
+                                <state key="normal" title="Change Date">
+                                    <color key="titleColor" red="0.4603313494785426" green="0.091681418206266713" blue="0.60622223984771573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="changeDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ob8-tb-8vr"/>
                                 </connections>
