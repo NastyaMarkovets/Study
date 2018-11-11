@@ -48,7 +48,7 @@
                     <navigationItem key="navigationItem" id="kSl-YO-D7g">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="QeS-Sb-m2a">
                             <connections>
-                                <action selector="takePhoto:" destination="BYZ-38-t0r" id="vMF-98-vCX"/>
+                                <action selector="addingPhoto:" destination="BYZ-38-t0r" id="NIB-MS-wdn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
