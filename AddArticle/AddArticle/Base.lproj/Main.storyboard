@@ -53,22 +53,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfG-qD-2u6">
-                                <rect key="frame" x="10" y="114" width="355" height="343"/>
+                                <rect key="frame" x="10" y="114" width="355" height="313"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vGG-50-oqI">
-                                <rect key="frame" x="122.5" y="477" width="130" height="130"/>
+                                <rect key="frame" x="87.5" y="447" width="200" height="200"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="690-R8-lg3"/>
-                                    <constraint firstAttribute="height" constant="130" id="6Mr-OO-4WD"/>
+                                    <constraint firstAttribute="width" constant="200" id="efw-dF-oYl"/>
+                                    <constraint firstAttribute="height" constant="200" id="kHB-SC-5sP"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRL-gi-Rm2">
-                                <rect key="frame" x="10" y="617" width="355" height="40"/>
-                                <color key="backgroundColor" red="0.40005310860105248" green="0.45965416719820607" blue="0.75793147208121825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="87.5" y="527" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.40005310860105248" green="0.45965416719820607" blue="0.75793147208121825" alpha="0.66903895547945202" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="CRq-Cf-jr0"/>
                                     <constraint firstAttribute="height" constant="40" id="KVK-88-L3C"/>
                                 </constraints>
                                 <state key="normal" title="Add image">
@@ -83,15 +85,14 @@
                         <constraints>
                             <constraint firstItem="vGG-50-oqI" firstAttribute="top" secondItem="qfG-qD-2u6" secondAttribute="bottom" constant="20" id="3jq-nO-AKv"/>
                             <constraint firstItem="qfG-qD-2u6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="6aD-kw-NGE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cRL-gi-Rm2" secondAttribute="bottom" constant="10" id="BeY-b4-bbn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BpG-7C-jwB" secondAttribute="trailing" constant="10" id="Bp9-lR-vg0"/>
+                            <constraint firstItem="cRL-gi-Rm2" firstAttribute="centerY" secondItem="vGG-50-oqI" secondAttribute="centerY" id="EF5-xo-nv8"/>
                             <constraint firstItem="BpG-7C-jwB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Ive-QI-LTE"/>
                             <constraint firstItem="BpG-7C-jwB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="QkC-qw-uEI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qfG-qD-2u6" secondAttribute="trailing" constant="10" id="RKM-DP-wKG"/>
-                            <constraint firstItem="cRL-gi-Rm2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="WYr-8D-jqk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vGG-50-oqI" secondAttribute="bottom" constant="20" id="dDO-Nc-a6k"/>
                             <constraint firstItem="qfG-qD-2u6" firstAttribute="top" secondItem="BpG-7C-jwB" secondAttribute="bottom" constant="10" id="h1y-JF-mNl"/>
-                            <constraint firstItem="cRL-gi-Rm2" firstAttribute="top" secondItem="vGG-50-oqI" secondAttribute="bottom" constant="10" id="p6d-2p-GA3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cRL-gi-Rm2" secondAttribute="trailing" constant="10" id="sga-Yh-Bjs"/>
+                            <constraint firstItem="cRL-gi-Rm2" firstAttribute="centerX" secondItem="vGG-50-oqI" secondAttribute="centerX" id="rtV-GI-X5X"/>
                             <constraint firstItem="vGG-50-oqI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wv5-H6-yOJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
