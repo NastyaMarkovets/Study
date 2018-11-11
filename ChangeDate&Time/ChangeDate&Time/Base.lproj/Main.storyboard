@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.9107231866812554" blue="0.89057882389867815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jNe-BP-Wml" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Ja-PO-gQQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m9g-4Q-EQf" secondAttribute="trailing" constant="10" id="BO6-qD-PCf"/>
@@ -88,7 +88,7 @@
                                 </date>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" white="0.92000000000000004" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.9107231866812554" blue="0.89057882389867815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="b4t-q2-Qgr" firstAttribute="leading" secondItem="gZi-ro-PKh" secondAttribute="leading" id="0fd-W4-Dkn"/>
                             <constraint firstItem="kU1-lC-7wN" firstAttribute="leading" secondItem="gZi-ro-PKh" secondAttribute="leading" id="1GS-fo-Dlz"/>
