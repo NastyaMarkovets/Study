@@ -35,12 +35,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MiH-RM-bji">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MiH-RM-bji">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="MiH-RM-bji" firstAttribute="height" secondItem="ibV-HX-JNH" secondAttribute="height" id="Jzg-gq-GyI"/>
+                                            <constraint firstItem="MiH-RM-bji" firstAttribute="width" secondItem="ibV-HX-JNH" secondAttribute="width" id="Wd3-Iu-Pl9"/>
+                                            <constraint firstItem="MiH-RM-bji" firstAttribute="centerY" secondItem="ibV-HX-JNH" secondAttribute="centerY" id="eKc-Yx-sMZ"/>
+                                            <constraint firstItem="MiH-RM-bji" firstAttribute="centerX" secondItem="ibV-HX-JNH" secondAttribute="centerX" id="qJP-hb-fDX"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="cellImage" destination="MiH-RM-bji" id="cpm-Bn-wDy"/>
                                         </connections>
@@ -55,7 +60,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SeA-vC-App" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HN6-p8-zk5"/>
-                            <constraint firstItem="SeA-vC-App" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jw6-YO-RzT"/>
+                            <constraint firstItem="SeA-vC-App" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bHd-MU-0oL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SeA-vC-App" secondAttribute="bottom" id="dXY-LC-zym"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SeA-vC-App" secondAttribute="trailing" id="n9u-tO-xUB"/>
                         </constraints>
@@ -64,10 +69,13 @@
                     <navigationItem key="navigationItem" title="Photos" id="v45-4w-FwH">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="HSy-Lp-0mn">
                             <connections>
-                                <action selector="addingNewPhoto:" destination="BYZ-38-t0r" id="YRU-wH-XbG"/>
+                                <action selector="addingPhoto:" destination="BYZ-38-t0r" id="0Mg-IG-J0q"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="collectionPhoto" destination="SeA-vC-App" id="Gdk-7o-RQE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

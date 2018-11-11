@@ -53,27 +53,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         choice.addAction(UIAlertAction(title: "Library", style: .default, handler: { (_) in
             self.takeFhotoLibrary()
         }))
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        choice.addAction(cancel)
         present(choice, animated: true)
     }
     
-    //MARK: - Saving Image here
-    @IBAction func save(_ sender: AnyObject) {
-        UIImageWriteToSavedPhotosAlbum(imageTake.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-    } // add image to imageView with function "image()"
-    
-    //MARK: - Add image to Library
-    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        if let error = error { //если при выборе фото ошибка
-            // we got back an error!
-            let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert) //создаем алерт с ошибкой
-            ac.addAction(UIAlertAction(title: "OK", style: .default)) //добавляем в него кнопку, чтобы закрыть алерт
-            present(ac, animated: true) //вызываем наш алерт
-        } else { //если ошибки нет
-            let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to your photos.", preferredStyle: .alert) //создаем алерт чтобы загрузить картинку
-            ac.addAction(UIAlertAction(title: "OK", style: .default)) //добавляем экшн с кнопкой ОК
-            present(ac, animated: true) //вызываем алерт
-        }
-    }
     
     //MARK: - Done image capture here
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
