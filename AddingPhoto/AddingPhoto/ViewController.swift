@@ -46,22 +46,22 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     //MARK: - Take Image
     @IBAction func addingPhoto(_ sender: Any) {
-        let choice = UIAlertController(title: "Please make a selection", message: "Camera or Library?", preferredStyle: .actionSheet)
-        choice.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (_) in
+        let selection = UIAlertController(title: "Please make a selection", message: "Camera or Library?", preferredStyle: .actionSheet)
+        selection.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (_) in
             self.takeFhotoCamera()
         }))
-        choice.addAction(UIAlertAction(title: "Library", style: .default, handler: { (_) in
+        selection.addAction(UIAlertAction(title: "Library", style: .default, handler: { (_) in
             self.takeFhotoLibrary()
         }))
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        choice.addAction(cancel)
-        present(choice, animated: true)
+        selection.addAction(cancel)
+        present(selection, animated: true)
     }
     
     
     //MARK: - Done image capture here
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        imagePicker.dismiss(animated: true, completion: nil) //?
+        imagePicker.dismiss(animated: true, completion: nil) 
         imageTake.image = info[UIImagePickerControllerOriginalImage] as? UIImage //добавление выбранной картинки в imageView
     }
     
